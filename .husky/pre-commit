@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if command -v npm &> /dev/null
+if command -v npx &> /dev/null
 then
-    npm run build
+    npx npm run build
 else
-    echo "No package manager found. Please install npm."
+    echo "npx not found. Please install npm."
     exit 1
 fi
