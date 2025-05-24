@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if command -v npx &> /dev/null
+if command -v bun &> /dev/null
 then
-    npx npm run build
+    bun run build
 else
-    echo "npx not found. Please install npm."
+    echo "bun not found. Please install bun."
     exit 1
 fi
