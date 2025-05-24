@@ -2,7 +2,7 @@
 
 if command -v npm &> /dev/null
 then
-    node node_modules/turbo/bin/turbo build
+    turbo build
 else
     echo "npm not found. Please install npm."
     exit 1
