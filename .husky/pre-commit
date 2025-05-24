@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if command -v bun &> /dev/null
+if command -v npm &> /dev/null
 then
-    bun run build
+    npm run build
 else
-    echo "bun not found. Please install bun."
+    echo "npm not found. Please install npm."
     exit 1
 fi
